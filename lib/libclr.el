@@ -13,20 +13,20 @@
     "#AF3A03" "#D65D0E" "#FE8019")) ; Orange
 
 (defun prgn|colour (colour shade)
-  (cond ((eql colour 'black)  (nth prgn|palette (+ 0 shade)))
-        ((eql colour 'gray)   (nth prgn|palette (+ 1 shade)))
-        ((eql colour 'white)  (nth prgn|palette (+ 2 shade)))
-        ((eql colour 'red)    (nth prgn|palette (+ 3 shade)))
-        ((eql colour 'green)  (nth prgn|palette (+ 4 shade)))
-        ((eql colour 'yellow) (nth prgn|palette (+ 5 shade)))
-        ((eql colour 'blue)   (nth prgn|palette (+ 6 shade)))
-        ((eql colour 'purple) (nth prgn|palette (+ 7 shade)))
-        ((eql colour 'aqua)   (nth prgn|palette (+ 8 shade)))
-        ((eql colour 'orange) (nth prgn|palette (+ 9 shade)))))
+  (cond ((eq colour 'black)  (nth (+ 0 shade) prgn|palette))
+        ((eq colour 'gray)   (nth (+ 1 shade) prgn|palette))
+        ((eq colour 'white)  (nth (+ 2 shade) prgn|palette))
+        ((eq colour 'red)    (nth (+ 3 shade) prgn|palette))
+        ((eq colour 'green)  (nth (+ 4 shade) prgn|palette))
+        ((eq colour 'yellow) (nth (+ 5 shade) prgn|palette))
+        ((eq colour 'blue)   (nth (+ 6 shade) prgn|palette))
+        ((eq colour 'purple) (nth (+ 7 shade) prgn|palette))
+        ((eq colour 'aqua)   (nth (+ 8 shade) prgn|palette))
+        ((eq colour 'orange) (nth (+ 9 shade) prgn|palette))))
 
-(defvar prgn|colour|foreground (prgn|colour 'white 1))
+(defvar prgn|colour|foreground (prgn|colour 'black 1))
 
-(defvar prgn|colour|background (prgn|colour 'black 1))
+(defvar prgn|colour|background (prgn|colour 'white 1))
 
 (provide 'libclr)
 
