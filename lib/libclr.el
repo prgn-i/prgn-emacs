@@ -1,6 +1,4 @@
-;;;; libclr.el
-
-;;; Code:
+;; libclr.el
 
 (defvar prgn|palette
   '("#1D2021" "#282828" "#3C3836"   ; Black
@@ -15,7 +13,6 @@
     "#AF3A03" "#D65D0E" "#FE8019")) ; Orange
 
 (defun prgn|colour (colour shade)
-
   (cond ((eql colour 'black)  (nth prgn|palette (+ 0 shade)))
         ((eql colour 'gray)   (nth prgn|palette (+ 1 shade)))
         ((eql colour 'white)  (nth prgn|palette (+ 2 shade)))
@@ -33,4 +30,4 @@
 
 (provide 'libclr)
 
-;;;; libclr.el ends here
+;; libclr.el ends here
