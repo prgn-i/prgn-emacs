@@ -7,17 +7,17 @@
 
 ;; CODE:
 
-(defface blck|face|default
+(defface prgn|face|default
   '(default
-      :family             blck|font-family|monospaced
-      :foundry            blck|font-foundry
+      :family             prgn|font-family|monospaced
+      :foundry            prgn|font-foundry
       :width              'normal
-      :height             (* blck|font-size 10)
+      :height             (* prgn|font-size 10)
       :weight             'light
       :slant              'normal
-      :foreground         blck|colour|foreground
-      :distant-foreground blck|colour|foreground
-      :background         blck|colour|background
+      :foreground         prgn|colour|foreground
+      :distant-foreground prgn|colour|foreground
+      :background         prgn|colour|background
       :underline          nil
       :overline           nil
       :strike-through     nil
@@ -28,9 +28,9 @@
       :font               nil
       :inherit            nil)
   "Face used for general information."
-  :group 'blck)
+  :group 'prgn)
 
-(defface blck|face|critical
+(defface prgn|face|critical
   '(default
       :family             nil
       :foundry            nil
@@ -38,9 +38,9 @@
       :height             nil
       :weight             nil
       :slant              nil
-      :foreground         (blck|colour 'white 1)
-      :distant-foreground (blck|colour 'white 1)
-      :background         (blck|colour 'red '1)
+      :foreground         (prgn|colour 'white 1)
+      :distant-foreground (prgn|colour 'white 1)
+      :background         (prgn|colour 'red '1)
       :underline          nil
       :overline           nil
       :strike-through     nil
@@ -49,11 +49,11 @@
       :stipple            nil
       :extend             nil
       :font               nil
-      :inherit            blck|face|default)
+      :inherit            prgn|face|default)
   "Face used for information that requires immediate action/attention."
-  :group 'blck)
+  :group 'prgn)
 
-(defface blck|face|popout
+(defface prgn|face|popout
   '(default
       :family             nil
       :foundry            nil
@@ -61,8 +61,8 @@
       :height             nil
       :weight             nil
       :slant              nil
-      :foreground         (blck|colour 'yellow 1)
-      :distant-foreground (blck|colour 'yellow 1)
+      :foreground         (prgn|colour 'yellow 1)
+      :distant-foreground (prgn|colour 'yellow 1)
       :background         nil
       :underline          nil
       :overline           nil
@@ -72,11 +72,11 @@
       :stipple            nil
       :extend             nil
       :font               nil
-      :inherit            blck|face|default)
+      :inherit            prgn|face|default)
   "Face used for information that needs attention."
-  :group 'blck)
+  :group 'prgn)
 
-(defface blck|face|strong
+(defface prgn|face|strong
   '(default
       :family             nil
       :foundry            nil
@@ -95,11 +95,11 @@
       :stipple            nil
       :extend             nil
       :font               nil
-      :inherit            blck|face|default)
+      :inherit            prgn|face|default)
   "Face used for information that is of a structural nature."
-  :group 'blck)
+  :group 'prgn)
 
-(defface blck|face|salient
+(defface prgn|face|salient
   '(default
       :family             nil
       :foundry            nil
@@ -107,8 +107,8 @@
       :height             nil
       :weight             nil
       :slant              nil
-      :foreground         (blck|colour 'blue 1)
-      :distant-foreground (blck|colour 'blue 1)
+      :foreground         (prgn|colour 'blue 1)
+      :distant-foreground (prgn|colour 'blue 1)
       :background         nil
       :underline          nil
       :overline           nil
@@ -118,11 +118,11 @@
       :stipple            nil
       :extend             nil
       :font               nil
-      :inherit            blck|face|default)
+      :inherit            prgn|face|default)
   "Face used for information that is important."
-  :group 'blck)
+  :group 'prgn)
 
-(defface blck|face|faded
+(defface prgn|face|faded
   '(default
       :family             nil
       :foundry            nil
@@ -130,8 +130,8 @@
       :height             nil
       :weight             nil
       :slant              nil
-      :foreground         (blck|colour 'gray 1)
-      :distant-foreground (blck|colour 'gray 1)
+      :foreground         (prgn|colour 'gray 1)
+      :distant-foreground (prgn|colour 'gray 1)
       :background         nil
       :underline          nil
       :overline           nil
@@ -141,11 +141,11 @@
       :stipple            nil
       :extend             nil
       :font               nil
-      :inherit            blck|face|default)
+      :inherit            prgn|face|default)
   "Face used for information that is less important."
-  :group 'blck)
+  :group 'prgn)
 
-(defface blck|face|subtle
+(defface prgn|face|subtle
   '(default
       :family             nil
       :foundry            nil
@@ -155,7 +155,7 @@
       :slant              nil
       :foreground         nil
       :distant-foreground nil
-      :background         (blck|colour 'gray 1)
+      :background         (prgn|colour 'gray 1)
       :underline          nil
       :overline           nil
       :strike-through     nil
@@ -164,11 +164,11 @@
       :stipple            nil
       :extend             nil
       :font               nil
-      :inherit            blck|face|default)
+      :inherit            prgn|face|default)
   "Face used to suggest a physical area on the screen."
-  :group 'blck)
+  :group 'prgn)
 
-(defun blck|face--clear (face)
+(defun prgn|face--clear (face)
 
   (set-face-attribute face nil
 
@@ -191,9 +191,9 @@
       :font               nil
       :inherit            nil))
 
-(defun blck|face--assign (face blck|face)
-  (blck|face--clear face)
-  (set-face-attribute face nil :inherit blck|face))
+(defun prgn|face--assign (face prgn|face)
+  (prgn|face--clear face)
+  (set-face-attribute face nil :inherit prgn|face))
 
 (provide 'libface)
 
