@@ -31,6 +31,14 @@
 ;; Load `hydra' configuration file
 (load (concat user-emacs-directory "plugin/hydra.el"))
 
+;; Project
+
+;; Load `projectile' configuration file
+(load (concat user-emacs-directory "plugin/projectile.el"))
+
+;; Load `magit' configuration file
+(load (concat user-emacs-directory "plugin/magit.el"))
+
 ;; Documentation
 
 ;; Load `helpful' configuration file
