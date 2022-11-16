@@ -2,6 +2,7 @@
 
 (setq default-frame-alist
       '((title                  . nil)
+        (alpha                  . 85)
 	(board-width            . 0)
 	(internal-border-width  . 0)
 	(vertical-scroll-bars   . nil)
