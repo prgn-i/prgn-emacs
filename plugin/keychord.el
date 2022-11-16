@@ -3,7 +3,7 @@
 (use-package key-chord
   :init
 
-  (setq key-chord-two-delay 0.1)
+  (setq key-chord-two-keys-delay 0.2)
 
   :config
 
