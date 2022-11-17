@@ -3,8 +3,8 @@
 (setq default-frame-alist
       '((title                  . nil)
         (alpha                  . 85)
-	(board-width            . 0)
-	(internal-border-width  . 0)
+	(border-width           . 0)
+	(internal-border-width  . 10)
 	(vertical-scroll-bars   . nil)
 	(horizontal-scroll-bars . nil)
 	(left-fringe            . 0)
