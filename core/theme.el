@@ -68,6 +68,30 @@
   (prgn|face--assign 'whitespace-tab                    'prgn|face|faded)
   (prgn|face--assign 'whitespace-trailing               'prgn|face|faded))
 
+;; Modeline faces
+
+(with-eval-after-load 'nano-modeline
+  (prgn|face--assign 'nano-modeline-active 'prgn|face|subtle)
+  (prgn|face--assign 'nano-modeline-inactive 'prgn|face|subtle)
+
+  (set-face-attribute 'nano-modeline-active-name nil
+                      :weight (face-attribute 'prgn|face|strong :weight))
+  (set-face-attribute 'nano-modeline-active-status-** nil
+                      :background (prgn|colour 'gray 0))
+  (set-face-attribute 'nano-modeline-active-status-RO nil
+                      :background (prgn|colour 'gray 0))
+  (set-face-attribute 'nano-modeline-active-status-RW nil
+                      :background (prgn|colour 'gray 0))
+  (set-face-attribute 'nano-modeline-inactive-name nil
+                      :weight (face-attribute 'prgn|face|strong :weight))
+  (set-face-attribute 'nano-modeline-inactive-status-** nil
+                      :background (prgn|colour 'gray 0))
+  (set-face-attribute 'nano-modeline-inactive-status-RO nil
+                      :background (prgn|colour 'gray 0))
+  (set-face-attribute 'nano-modeline-inactive-status-RW nil
+                      :background (prgn|colour 'gray 0))
+  )
+
 (provide 'theme)
 
 ;; theme.el ends here
