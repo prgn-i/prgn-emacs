@@ -14,6 +14,7 @@
 
   (prgn|key|leader
     "f" '(:ignore t :which-key "Files")
+    "fd" '(delete-file :which-key "Delete")
     "ff" '(find-file :which-key "Find")))
 
 ;; general.el ends here
