@@ -2,9 +2,14 @@
 
 (use-package nano-modeline
   :straight
+
   (nano-modeline :type git
                  :host github
                  :repo "rougier/nano-modeline")
+
+  :init
+
+  (setq nano-modeline-position 'bottom)
 
   :config
 
