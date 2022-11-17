@@ -21,11 +21,14 @@
   :family     prgn|font|family|variable
   :height     (face-attribute 'prgn|face|default :height))
 
-(prgn|face--assign 'bold              'prgn|face|strong)
-(prgn|face--assign 'italic            'prgn|face|faded)
-(prgn|face--assign 'bold-italic       'prgn|face|strong)
-(prgn|face--assign 'region            'prgn|face|subtle)
-(prgn|face--assign 'fixed-pitch-serif 'prgn|face|default)
+(prgn|face--assign 'bold                       'prgn|face|strong)
+(prgn|face--assign 'italic                     'prgn|face|faded)
+(prgn|face--assign 'bold-italic                'prgn|face|strong)
+(prgn|face--assign 'region                     'prgn|face|subtle)
+(prgn|face--assign 'fixed-pitch-serif          'prgn|face|default)
+(prgn|face--assign 'window-divider             'prgn|face|faded)
+(prgn|face--assign 'window-divider-first-pixel 'window-divider)
+(prgn|face--assign 'window-divider-last-pixel  'window-divider)
 
 ;; Parenthesis faces
 
@@ -70,6 +73,9 @@
 
 ;; Modeline faces
 
+(prgn|face--assign 'mode-line 'prgn|face|subtle)
+(prgn|face--assign 'mode-line-highlight 'prgn|face|subtle)
+
 (with-eval-after-load 'nano-modeline
   (prgn|face--assign 'nano-modeline-active 'prgn|face|subtle)
   (prgn|face--assign 'nano-modeline-inactive 'prgn|face|subtle)
@@ -82,6 +88,7 @@
                       :background (prgn|colour 'gray 0))
   (set-face-attribute 'nano-modeline-active-status-RW nil
                       :background (prgn|colour 'gray 0))
+
   (set-face-attribute 'nano-modeline-inactive-name nil
                       :weight (face-attribute 'prgn|face|strong :weight))
   (set-face-attribute 'nano-modeline-inactive-status-** nil
@@ -89,8 +96,7 @@
   (set-face-attribute 'nano-modeline-inactive-status-RO nil
                       :background (prgn|colour 'gray 0))
   (set-face-attribute 'nano-modeline-inactive-status-RW nil
-                      :background (prgn|colour 'gray 0))
-  )
+                      :background (prgn|colour 'gray 0)))
 
 (provide 'theme)
 
