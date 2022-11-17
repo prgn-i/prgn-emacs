@@ -48,7 +48,7 @@
 (prgn|face--assign 'font-lock-function-name-face     'prgn|face|strong)
 (prgn|face--assign 'font-lock-string-face            'prgn|face|popout)
 (prgn|face--assign 'font-lock-type-face              'prgn|face|salient)
-(prgn|face--assign 'font-lock-variable-name-face     'prgn|face|default)
+(prgn|face--assign 'font-lock-variable-name-face     'prgn|face|strong)
 (prgn|face--assign 'font-lock-warning-face           'prgn|face|critical)
 
 ;; Whitespace faces

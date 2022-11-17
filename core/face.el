@@ -57,7 +57,6 @@ a very light background color that is barely perceptible."
 
 (set-face-attribute 'prgn|face|default nil
   :family             prgn|font|family|monospace
-  ;:foundry            prgn|font-foundry
   :width              'normal
   :height             (* prgn|font|size 10)
   :weight             'light
@@ -65,15 +64,7 @@ a very light background color that is barely perceptible."
   :foreground         prgn|colour|foreground
   :distant-foreground prgn|colour|foreground
   :background         prgn|colour|background
-  :underline          nil
-  :overline           nil
-  :strike-through     nil
-  :box                nil
-  :inverse-video      nil
-  :stipple            nil
-  :extend             nil
-  ;:font               nil
-  :inherit            nil)
+  :inherit            'default)
 
 (set-face-attribute 'prgn|face|critical nil
   :foreground         (prgn|colour 'white 1)
