@@ -15,4 +15,10 @@
 ;; Load frame configuration file
 (load (concat user-emacs-directory "core/frame.el") 'nomessage)
 
+;; Load startup configuration file
+(load (concat user-emacs-directory "core/startup.el") 'nomessage)
+
+;; Load plugin configuration entry point file
+(load (concat user-emacs-directory "plugin/init.el") 'nomessage)
+
 ;; early-init.el ends here
