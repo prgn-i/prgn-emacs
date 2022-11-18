@@ -21,4 +21,7 @@
 (dolist (mode '(prog-mode-hook))
   (add-hook mode (lambda () (setq indent-tabs-mode nil))))
 
+;; Disable blinking cursor
+(blink-cursor-mode 0)
+
 ;; options.el ends here
