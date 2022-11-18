@@ -29,6 +29,8 @@
 (prgn|face--assign 'window-divider             'prgn|face|faded)
 (prgn|face--assign 'window-divider-first-pixel 'window-divider)
 (prgn|face--assign 'window-divider-last-pixel  'window-divider)
+(prgn|face--assign 'minibuffer-prompt          'prgn|face|strong)
+(prgn|face--assign 'highlight                  'prgn|face|subtle)
 
 ;; Parenthesis faces
 
@@ -97,6 +99,13 @@
                       :background (prgn|colour 'gray 0))
   (set-face-attribute 'nano-modeline-inactive-status-RW nil
                       :background (prgn|colour 'gray 0)))
+
+;; Vertico faces
+
+(with-eval-after-load 'vertico
+  (prgn|face--assign 'vertico-current              'prgn|face|subtle)
+  (prgn|face--assign 'completions-common-part      'prgn|face|popout)
+  (prgn|face--assign 'completions-first-difference 'prgn|face|popout))
 
 (provide 'theme)
 
