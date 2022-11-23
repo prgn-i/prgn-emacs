@@ -24,4 +24,13 @@
 ;; Disable blinking cursor
 (blink-cursor-mode 0)
 
+;; Set backup directory
+(setq backup-directory-alist `(("." . ,(concat user-emacs-directory ".local/etc/backups"))))
+
+;; Truncate lines instead of wrap
+(setq-default truncate-lines t)
+
+;; Abbreviate prompt confirmations
+(fset 'yes-or-no-p 'y-or-n-p)
+
 ;; options.el ends here
